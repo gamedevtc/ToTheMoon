@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2352208867098802067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7740104288602596921}
+  m_Layer: 0
+  m_Name: Thermal Missiles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7740104288602596921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2352208867098802067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2326288738550511266}
+  - {fileID: 2869094377498490628}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3058070808586444948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7740104288602596921}
+    m_Modifications:
+    - target: {fileID: 734988113593814280, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_Name
+      value: Thermal Missile Launcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000014106499
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+--- !u!4 &2326288738550511266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+  m_PrefabInstance: {fileID: 3058070808586444948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3308389086579663154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7740104288602596921}
+    m_Modifications:
+    - target: {fileID: 734988113593814280, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_Name
+      value: Thermal Missile Launcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000014106499
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+--- !u!4 &2869094377498490628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 736567765263062582, guid: 403b04eb0a7a05b479a282108f952b97, type: 3}
+  m_PrefabInstance: {fileID: 3308389086579663154}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,42 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+static const int TGS = 1024;
+
+struct AI
+{
+    float3 position;
+    float3 direction;
+    
+    float3 avoidHeading;
+    int neighbors;
+};
+
+RWStructuredBuffer<AI> ships;
+int numShips;
+float viewRadius;
+float avoidRadius;
+
+[numthreads(TGS,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    for (uint i = 0; i < (uint)numShips; i++)
+    {
+        if (id.x != i)
+        {
+            AI otherShip = ships[i];
+            float3 offset = otherShip.position - ships[id.x].position;
+            float sqDistance = offset.x * offset.x + offset.y * offset.y + offset.z * offset.z;
+            
+            if (sqDistance < viewRadius * viewRadius)
+            {
+                ships[id.x].neighbors += 1;
+                if (sqDistance < avoidRadius * avoidRadius)
+                {
+                    ships[id.x].avoidHeading -= offset / sqDistance;
+                }
+            }
+        }
+    }
+
+}

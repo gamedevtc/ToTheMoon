@@ -1,0 +1,37 @@
+----Ship Save Data----
+6
+10
+12
+16
+27
+550
+----Shop Data----
+28
+True
+True
+False
+True
+True
+True
+True
+True
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+False
+True
+True
+True
+True
+True
+False
+True
+True
+False

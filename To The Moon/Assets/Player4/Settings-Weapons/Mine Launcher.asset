@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9360fb77c780e14b854db4aae2e663a, type: 3}
+  m_Name: Mine Launcher
+  m_EditorClassIdentifier: 
+  projectilePrefabSingle: {fileID: 5510471345784455093, guid: 12fcb7c3b74595e4980be95f20025d70, type: 3}
+  projectilePrefabMulti: {fileID: 5510471345784455093, guid: 67118228f6c800344aecb786635931e9, type: 3}
+  fireCoolDown: 0
+  layerTarget:
+    serializedVersion: 2
+    m_Bits: 0
+  ultChargeTime: 2
+  ultGainMultiplier: 1
+  collisionBoundsRadius: 0
+  LockOnDistance: 0

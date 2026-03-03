@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59af9270b50ecef4ca2ee0106341ef30, type: 3}
+  m_Name: EMPShot
+  m_EditorClassIdentifier: 
+  bulletLife: 4
+  damage: 0
+  speed: 10
+  tracking: 0
+  onHitEffect: {fileID: 4212929734973047699, guid: d170b00058133c54abf83454996ff73a, type: 3}
+  minSpeed: 30
+  maxSpeed: 40
+  steerForceCap: 5
+  targetWeight: 250
+  blastRadius: 300
+  detectRadius: 500
+  countDown: 5
+  minSpeedChase: 200
+  maxSpeedChase: 300
+  stunTime: 5

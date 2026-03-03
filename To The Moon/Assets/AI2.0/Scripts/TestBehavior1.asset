@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09aa6d2077190b4f9f3d420bb0f659a, type: 3}
+  m_Name: TestBehavior1
+  m_EditorClassIdentifier: 
+  BehaviourName: 
+  rarity: 0
+  Health: 100
+  Mass: 100
+  IsLeader: 0
+  PursuitMinSpeed: 100
+  PursuitMaxSpeed: 150
+  PursuitSteerForceCap: 5
+  FleeMinSpeed: 100
+  FleeMaxSpeed: 150
+  FleeSteerForceCap: 5
+  WanderMinSpeed: 100
+  WanderMaxSpeed: 150
+  WanderSteerForceCap: 5
+  FollowMinSpeed: 100
+  FollowMaxSpeed: 150
+  FollowSteerForceCap: 5
+  AttackMinSpeed: 100
+  AttackMaxSpeed: 150
+  AttackSteerForceCap: 5
+  BehaviourForceWeightPursuit: 100
+  BehaviourForceWeightFlee: 100
+  BehaviourForceWeightWander: 100
+  BehaviourForceWeightFollow: 100
+  BehaviourForceWeightAttack: 100
+  CollisionAvoidRayRadius: 20
+  CollisionAvoidRayDistance: 100
+  CollisionAvoidForceWeightPursuit: 200
+  CollisionAvoidForceWeightFlee: 200
+  CollisionAvoidForceWeightWander: 200
+  CollisionAvoidForceWeightFollow: 200
+  CollisionAvoidForceWeightAttack: 200
+  SeparationVisionRadius: 50
+  SeparationAvoidRadius: 15
+  SeperationWeight: 100
+  SeparationForceWeightPursuit: 100
+  SeparationForceWeightFlee: 100
+  SeparationForceWeightWander: 100
+  SeparationForceWeightFollow: 100
+  SeparationForceWeightAttack: 100
+  TargetForgetDistance: 300
+  TargetRadius: 15
+  TargetDistance: 30
+  TargetWeight: 100
+  BulletDamage: 10
+  BulletCooldown: 0.3

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8269748540428630227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8269748540428630229}
+  - component: {fileID: 8269748540428630226}
+  m_Layer: 0
+  m_Name: Level Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8269748540428630229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269748540428630227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3253841, y: 14.948212, z: 6.9437447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8269748540428630226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8269748540428630227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0a08f6211037147a6bcf3a388dfb3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelList:
+  - {fileID: 11400000, guid: 85478ee12c794c54c8a2268ac1f288c5, type: 2}
+  - {fileID: 11400000, guid: 5ff3baadb26b08e468ad5bd904a4a7e1, type: 2}
+  - {fileID: 11400000, guid: 6a7f261e4ed0d534480763cc71f21662, type: 2}
+  - {fileID: 11400000, guid: f31bd65f4a6816549ab5ede2fa79a0f7, type: 2}
+  - {fileID: 11400000, guid: fde40cecd19677243a191fe42beaae5f, type: 2}
+  difficultyCustom: 0
+  mapRadiusCustom: 5
+  asteroidCountCustom: 50
+  asteroidMinScaleCustom: 50
+  asteroidMaxScaleCustom: 200
+  asteroidMinGapCustom: 200
+  fluffyAsteroidBoundsCustom: 1
+  fluffyFactorCustom: 25
+  spawnOutsideAsteroidsCustom: 0
+  backgroundSettingsCustom: 4
+  backgroundObjectCustom: 1
+  numOfWavesCustom: 1
+  initialRewardCustom: 150
+  secondaryRewardCustom: 150
+  difficultyDefault: 0
+  mapRadiusDefault: 500
+  asteroidCountDefault: 100
+  asteroidMinScaleDefault: 50
+  asteroidMaxScaleDefault: 150
+  asteroidMinGapDefault: 150
+  fluffyAsteroidBoundsDefault: 1
+  fluffyFactorDefault: 25
+  spawnOutsideAsteroidsDefault: 0
+  backgroundSettingsDefault: 2
+  backgroundObjectDefault: 1
+  numOfWavesDefault: 3
+  initialRewardDefault: 150
+  secondaryRewardDefault: 150

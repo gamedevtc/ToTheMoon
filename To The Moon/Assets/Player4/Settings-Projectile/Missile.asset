@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59af9270b50ecef4ca2ee0106341ef30, type: 3}
+  m_Name: Missile
+  m_EditorClassIdentifier: 
+  bulletLife: 10
+  damage: 45
+  speed: 0
+  tracking: 0
+  onHitEffect: {fileID: 4212929734973047699, guid: d170b00058133c54abf83454996ff73a, type: 3}
+  minSpeed: 200
+  maxSpeed: 300
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+  steerForceCap: 5
+  targetWeight: 250
+  blastRadius: 0
+  detectRadius: 200
+  countDown: 0
+  minSpeedChase: 0
+  maxSpeedChase: 0
+  stunTime: 0
