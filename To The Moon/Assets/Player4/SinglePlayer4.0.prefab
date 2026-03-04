@@ -2800,6 +2800,10 @@ MonoBehaviour:
   invertXaxis: 0
   mouseXclamp: 1.35
   mouseYclamp: 1.35
+  mouseJoystickSensitivity: 20
+  mouseJoystickAdjustmentRate: 1
+  joystickRadius: 250
+  deadzone: 0.05
   cheatMenuIsOpen: 0
   GodMode: 0
   InfiniteBoost: 0

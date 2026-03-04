@@ -53,6 +53,11 @@ public class Player4Base : MonoBehaviour, ITeamMember
     [SerializeField] protected bool invertXaxis = false;
     [SerializeField] protected float mouseXclamp = 0.5f;
     [SerializeField] protected float mouseYclamp = 0.5f;
+    [SerializeField] protected float mouseJoystickSensitivity = 15f;
+    [SerializeField] protected float mouseJoystickAdjustmentRate = 0.05f;
+    [SerializeField] protected float joystickRadius = 200f; // pixels, tune this
+    [SerializeField] protected float deadzone = 0.05f;// 5% deadzone
+    protected Vector3 mouseVirtualPos = Vector3.zero;
     #endregion
 
     #region Cheat Variables
@@ -341,10 +346,40 @@ public class Player4Base : MonoBehaviour, ITeamMember
         float inputY = 0;
         if (!paused)
         {
-            inputY = Input.GetAxis("Mouse Y");
-            inputX = Input.GetAxis("Mouse X");
-            inputX = Mathf.Clamp(inputX, -mouseXclamp, mouseXclamp);
-            inputY = Mathf.Clamp(inputY, -mouseYclamp, mouseYclamp);
+            if (ControllerEnabled)
+            {
+                inputY = Input.GetAxis("Mouse Y");
+                inputX = Input.GetAxis("Mouse X");
+                inputX = Mathf.Clamp(inputX, -mouseXclamp, mouseXclamp);
+                inputY = Mathf.Clamp(inputY, -mouseYclamp, mouseYclamp);
+            }
+            else
+            {
+                mouseVirtualPos += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0f) * mouseJoystickSensitivity;
+                mouseVirtualPos.x = Mathf.Clamp(mouseVirtualPos.x, -joystickRadius, joystickRadius);
+                mouseVirtualPos.y = Mathf.Clamp(mouseVirtualPos.y, -joystickRadius, joystickRadius);
+                Vector3 offset = mouseVirtualPos;
+                float normalizedX = Mathf.Clamp((offset.x / joystickRadius), -1, 1);
+                float normalizedY = Mathf.Clamp((offset.y / joystickRadius), -1, 1);
+                float magnitude = Mathf.Sqrt(normalizedX * normalizedX + normalizedY * normalizedY);
+                if (magnitude < deadzone)
+                {
+                    normalizedX = 0f;
+                    normalizedY = 0f;
+                }
+                else
+                {
+                    // Rescale so input starts at 0 after the deadzone edge, not abruptly
+                    float scale = (magnitude - deadzone) / (1f - deadzone);
+                    normalizedX = (normalizedX / magnitude) * scale;
+                    normalizedY = (normalizedY / magnitude) * scale;
+                }
+                inputX = normalizedX;
+                inputY = normalizedY;
+                
+                // Drift base toward current mouse position
+                mouseVirtualPos = Vector3.Lerp(mouseVirtualPos, Vector3.zero, mouseJoystickAdjustmentRate * Time.deltaTime);
+            }
         }
         //transform.Rotate(invertYVal * inputY * ship.stats().handlingSpeed, 0.0f, 0.0f);
         //transform.Rotate(0.0f, invertXVal * inputX * ship.stats().handlingSpeed, 0.0f);
@@ -384,15 +419,14 @@ public class Player4Base : MonoBehaviour, ITeamMember
         float distance = Vector3.Distance(this.transform.position, Vector3.zero);
         if (LevelBuilder.Instance != null)
         {
-        if (distance > LevelBuilder.Instance.getMapRadius())
-        {
-            escaping = true;
-        }
-        else
-        {
-            escaping = false;
-        }
-
+            if (distance > LevelBuilder.Instance.getMapRadius())
+            {
+                escaping = true;
+            }
+            else
+            {
+                escaping = false;
+            }
         }
         else
         {
